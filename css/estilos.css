@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+.container_principal{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 70%; 
+    justify-content: space-around;
+}
+.icon{
+    font-size: 25px;
+    border: 10px solid white;
+    padding: 10px;
+    box-shadow: 0px 17px  30px -20px;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+}
+div>h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:   translate(-50%,-50%) scale(0);
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1s;
+}
+.icon:hover h2{
+    transform: translate(-50%,-50%) scale(1) ;
+    opacity:1;
+}
+.icon:hover {
+    padding: 10px 80px 10px 80px;
+    border-radius: 90px;
+}
+ion-icon{
+    transform: scale(1);
+    transition: 1s;
+}
+.icon:hover ion-icon{
+    transform: scale(0);
+}
+#home:hover{
+    border-color: blueviolet;
+    background-color: blueviolet;
+}
+#chat:hover{
+    border-color:crimson;
+    background-color: crimson;
+}
+#heart:hover{
+    border-color: chartreuse;
+    background-color: chartreuse;
+}
+#videocam:hover{
+    border-color: coral;
+    background-color: coral;
+}
+#camera:hover{
+    border-color: aqua;
+    background-color: aqua;
+}
+
